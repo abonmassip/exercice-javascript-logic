@@ -1,4 +1,4 @@
-var button = document.getElementById("submit_array1");
+var button1 = document.getElementById("submit_array1");
 var input1 = document.getElementById("array1");
 var output1 = document.getElementById("output_array1")
 
@@ -32,21 +32,13 @@ const answer3 = giveArray => { // combining both answers, array with two arrays 
             newStringsArray.push(numberGroup);
         }
     });
-    let resultat = [newNumbersArray, newStringsArray];
+    let result1 = [newNumbersArray, newStringsArray];
     output1.innerHTML = "";
-    output1.appendChild(document.createTextNode(JSON.stringify(resultat)));
+    output1.appendChild(document.createTextNode(JSON.stringify(result1)));
 }
 
 const inputToAnswer3 = par => {
-    // const newPar = par.map(num => {
-    //     if (num.length === 1) {
-    //         return parseInt(num, 10)
-    //     } else {
-    //         return num.replace(/['"]+/g, '');
-    //     }
-    // })
     const newPar = par.map(num => {
-        console.log(num);
         if (num.includes('"') === true) {
             return num.replace(/['" ]+/g, '');
         } else {
@@ -56,6 +48,6 @@ const inputToAnswer3 = par => {
     answer3(newPar);
 }
 
-button.addEventListener("click", function () {
+button1.addEventListener("click", function () {
     inputToAnswer3(input1.value.split(","));
 });
