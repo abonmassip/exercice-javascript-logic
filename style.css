@@ -1,0 +1,96 @@
+body {
+    height: 100vh;
+    background: linear-gradient(to right, rgb(245, 224, 211), rgb(255, 230, 234));
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5em;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 30px;
+    margin: 30px auto;
+    max-width: 80vw;
+}
+
+header {
+    font: 600 1em 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main {
+    display: grid;
+    gap: 30px;
+}
+
+.question {
+    padding: 10px;
+    display: grid;
+    justify-items: center;
+    gap: 10px
+}
+
+input {
+    background-color: rgba(255, 255, 255, 1);
+    width: 20em;
+    border: none;
+    height: 20px;
+    padding: 10px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.input-small {
+    width: 1em;
+
+}
+
+button {
+    border: none;
+    background-color: #fff;
+    height: 2em;
+    border-radius: 6px;
+    margin: 25px auto;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(194, 152, 152, 0.5);
+}
+
+.answer {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 20px;
+    padding: 10px;
+    width: 80%;
+}
+
+.answer::before {
+    content: "Answer: "
+}
+
+.block {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.code {
+    background-color: #EEEEEE;
+    color: rgb(219, 64, 64);
+    font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+span {
+    font-size: 0.8em;
+}
+
+p {
+    margin: 0;
+}

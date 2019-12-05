@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Logic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="block">
+            <h1>Exercise: Javascript Logic</h1>
+        </header>
+
+        <main>
+            <div class="question block">
+                <p>Clean the room function: given an input of <span
+                        class="code">[1,2,4,591,392,391,2,5,10,2,1,1,1,20,20]</span>,
+                    make a function that
+                    organizes these into individual array that is ordered. It should
+                    return: <span class="code">[[1,1,1,1],[2,2,2], 4,5,10,[20,20], 391, 392,591]</span>. Bonus: Make it
+                    so it organizes strings
+                    differently
+                    from
+                    number types. i.e. <span class="code">[1, "2", "3", 2]</span> should return <span
+                        class="code">[[1,2], ["2", "3"]]</span></p>
+                <span>Insert array</span>
+                <span>[ <input type="text" id="array1"> ]</span>
+                <button id="submit_array">Organize Array</button>
+                <span class="answer"></span>
+            </div>
+
+            <div class="question block">
+                <p>Write a javascript function that takes an array of numbers and a target number. The function should
+                    find two different numbers in the array that, when added together, give the target number. For
+                    example:
+                    <span class="code">[1,2,3]</span> and <span class="code">4</span>
+                    should return <span class="code">[1,3]</span></p>
+                <span>Insert Array</span>
+                <span>[ <input type="text" id="array2"> ]</span>
+                <span>Insert target number</span>
+                <span><input class="input-small" type="text" id="target"></span>
+                <button id="submit_array">Find Sum</button>
+                <span class="answer"></span>
+            </div>
+
+            <div class="question block">
+                <p>Write a function that converts HEX to RGB. Then Make that function auto-dect the formats so that if
+                    you enter HEX color format it returns RGB and if you enter RGB color format it returns HEX.</p>
+                <span>Insert color code in HEX or RGB. examples: #ffffff or rgb(131, 181, 83)</span>
+                <span><input type="text" id="array2"></span>
+                <button id="submit_array">Convert</button>
+                <span class="answer"></span>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+
+</html>
