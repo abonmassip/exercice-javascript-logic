@@ -67,6 +67,7 @@ button:hover {
     height: 20px;
     padding: 10px;
     width: 80%;
+    max-width: 600px;
 }
 
 .answer::before {
