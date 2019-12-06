@@ -71,6 +71,8 @@ button:hover {
     text-align: center;
 }
 
+#output_color {}
+
 .answer::before {
     content: "Answer: "
 }

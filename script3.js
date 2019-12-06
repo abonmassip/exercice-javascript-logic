@@ -44,8 +44,10 @@ const hexRgb = (par) => { // convert color code. HEX to RGB
 
 const convertColor = (color1, color2, color3) => { // check if RGB or HEX is inserted and convert
     if (color1 && color2 && color3) {
+        input3.style.backgroundColor = `rgb(${color1}, ${color2}, ${color3})`;
         return rgbHex(color1, color2, color3);
     } else if (!color2 && !color3) {
+        input3.style.backgroundColor = `#${color1}`;
         return hexRgb(color1);
     } else {
         return "Insert an RGB (xxx,xxx,xxx) or HEX('XXXXXX') color code"
