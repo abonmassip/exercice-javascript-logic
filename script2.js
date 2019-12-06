@@ -4,11 +4,11 @@ var input2Target = document.getElementById("target");
 var output2 = document.getElementById("output_array2");
 
 const answer4 = (array, target) => {
+    output2.innerHTML = "";
     for (value of array) {
         for (sumValue of array) {
             if (value + sumValue === target) {
                 let result2 = [value, sumValue];
-                output2.innerHTML = "";
                 output2.appendChild(document.createTextNode(JSON.stringify(result2)));
                 return;
             }
